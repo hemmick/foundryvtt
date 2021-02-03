@@ -12,4 +12,4 @@ USER foundry
 
 # default foundry port
 EXPOSE 30000
-CMD node ${FOUNDRY_APP_DIR}/resources/app/main.js --headless --dataPath=${FOUNDRY_DATA_DIR}
+CMD ["node", "$FOUNDRY_PKG_DIR/resources/app/main.js", "--headless", "--dataPath=$FOUNDRY_DATA_DIR" ]
